@@ -1,0 +1,18 @@
+
+contract ContractName {
+  uint32 id;
+  uint32 counter;
+
+  function increment_asm(uint32 increasedBy) internal {
+    counter += increasedBy;
+    id += 1;
+  }
+
+  function getCounter() public returns(uint32) {
+    return counter;
+  }
+
+  function getID() public returns(uint32) {
+    return id;
+  }
+}
